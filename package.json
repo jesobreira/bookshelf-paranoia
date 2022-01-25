@@ -1,5 +1,5 @@
 {
-  "name": "bookshelf-paranoia",
+  "name": "@jesobreira/bookshelf-paranoia",
   "version": "0.13.1",
   "description": "Soft delete data from your database",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/estate/bookshelf-paranoia.git"
+    "url": "git+https://github.com/jesobreira/bookshelf-paranoia.git"
   },
   "keywords": [
     "bookshelf",
@@ -29,9 +29,9 @@
   "contributors": ["David García (https://www.linkedin.com/in/davidgarciafdz/)"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/estate/bookshelf-paranoia/issues"
+    "url": "https://github.com/jesobreira/bookshelf-paranoia/issues"
   },
-  "homepage": "https://github.com/estate/bookshelf-paranoia#readme",
+  "homepage": "https://github.com/jesobreira/bookshelf-paranoia#readme",
   "dependencies": {
     "bluebird": "^3.4.7",
     "lodash.merge": "^4.3.5",

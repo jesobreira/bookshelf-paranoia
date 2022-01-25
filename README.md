@@ -1,4 +1,4 @@
-# bookshelf-paranoia
+# @jesobreira/bookshelf-paranoia
 [![Build Status](https://circleci.com/gh/estate/bookshelf-paranoia.svg?style=shield)](https://circleci.com/gh/estate/bookshelf-paranoia)
 [![Code Climate](https://codeclimate.com/github/estate/bookshelf-paranoia/badges/gpa.svg)](https://codeclimate.com/github/estate/bookshelf-paranoia)
 [![Test Coverage](https://codeclimate.com/github/estate/bookshelf-paranoia/badges/coverage.svg)](https://codeclimate.com/github/estate/bookshelf-paranoia/coverage)
@@ -7,14 +7,9 @@
 
 Protect your database from data loss by soft deleting your rows.
 
-### Unmaintained
-
-I don't use this package anymore so it's un-maintained. I still spend a little time managing small
-fixes but do so at a fairly slow pace. If you're interested in maintaining this project, please reach out to me.
-
 ### Installation
 
-After installing `bookshelf-paranoia` with `npm i --save bookshelf-paranoia`,
+After installing `@jesobreira/bookshelf-paranoia` with `npm i --save @jesobreira/bookshelf-paranoia`,
 all you need to do is add it as a bookshelf plugin and enable it on your models.
 The default field used to soft delete your models is `deleted_at` but you can override that.
 
