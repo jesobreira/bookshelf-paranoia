@@ -162,10 +162,17 @@ module.exports = (bookshelf, settings) => {
               query = query.transacting(options.transacting)
             }
 
-            return query
-              .update(attrs, this.idAttribute)
-              .where(this.format(this.attributes))
-              .where(`${result(this, 'tableName')}.${settings.field}`, settings.nullValue)
+			if (query.client.config.client.includes('mysql')) {
+				return query
+				  .update(attrs)
+				  .where(this.format(this.attributes))
+				  .where(`${result(this, 'tableName')}.${settings.field}`, settings.nullValue)
+			} else {
+				return query
+				  .update(attrs, this.idAttribute)
+				  .where(this.format(this.attributes))
+				  .where(`${result(this, 'tableName')}.${settings.field}`, settings.nullValue)
+			}
           })
           .then((resp) => {
             // Check if the caller required a row to be deleted and if
